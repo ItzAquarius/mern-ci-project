@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 
-app.get("/api", (req, res) => {
-  res.json({ message: "Backend Working" });
+app.get("/", (req, res) => {
+  res.send("Hello CI");
 });
 
 module.exports = app;
