@@ -1,7 +1,7 @@
 const request = require("supertest");
 const app = require("./index");
 
-test("GET /api", async () => {
-  const res = await request(app).get("/api");
+test("GET /", async () => {
+  const res = await request(app).get("/");
   expect(res.statusCode).toBe(200);
 });
